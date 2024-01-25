@@ -1,3 +1,19 @@
+
+body {
+    background-color: white;
+}
+
+.container {
+    margin: 30px 50px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+img {
+    border-radius: .5rem;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -8,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: lightsteelblue;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .side-column {

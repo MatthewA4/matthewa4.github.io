@@ -23,7 +23,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    background-color: lightsteelblue;
+    background-color: #b4c0d3;
     /* padding: 20px; */
 }
 
@@ -37,6 +37,9 @@ body {
 .main-content {
     flex-grow: 1;
     padding: 20px;
+    background-color: #b4c0d3;
+    background-image: url("../img/image.png");
+    background-repeat: no-repeat;
 }
 
 /* Add more styling as needed */

@@ -94,7 +94,7 @@ a {
         transition: left 0.3s;
         box-shadow: 2px 0 8px rgba(0,0,0,0.2);
     }
-    .menu-toggle:checked + .menu-icon + .side-column {
+    .menu-toggle:checked + .menu-icon + .container .side-column {
         left: 0;
     }
     .menu-icon {
@@ -110,16 +110,6 @@ a {
         float: none;
     }
     /* Hide the solar PHP image on mobile */
-    .side-column img[src*="hamqsl.com/solarn0nbh.php"] {
-        display: none !important;
-    }
-    .side-column img[src*="hamqsl.com/solarn0nbh.php"] {
-        display: none !important;
-    }
-    /* Hide the parent <center> of the PHP image on mobile */
-    .side-column center:has(img[src*="hamqsl.com/solarn0nbh.php"]) {
-        display: none !important;
-    }
     .side-column .solar-widget {
         display: none !important;
     }

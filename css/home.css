@@ -1,3 +1,11 @@
+/* Home Page Styles */
+/* Reset some default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body {
     background-color: white;
@@ -46,4 +54,88 @@ body {
 a {
     color: yellow; /* sets link color */
     text-decoration: none;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    padding: 15px;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    border-radius: 5px;
+}
+
+/* Sidebar slide-out for mobile */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .side-column {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 220px;
+        height: 100%;
+        background: #3498db;
+        color: #fff;
+        padding: 20px 10px;
+        overflow-y: auto;
+        z-index: 1000;
+        transition: left 0.3s;
+        box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    }
+    .menu-toggle:checked + .menu-icon + .side-column {
+        left: 0;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .main-content {
+        width: 100%;
+        padding: 70px 0 10px 0; /* Add top padding for hamburger */
+        margin-left: 0;
+    }
+    .column {
+        width: 100% !important;
+        float: none;
+    }
+    /* Hide the solar PHP image on mobile */
+    .side-column img[src*="hamqsl.com/solarn0nbh.php"] {
+        display: none !important;
+    }
+    .side-column img[src*="hamqsl.com/solarn0nbh.php"] {
+        display: none !important;
+    }
+    /* Hide the parent <center> of the PHP image on mobile */
+    .side-column center:has(img[src*="hamqsl.com/solarn0nbh.php"]) {
+        display: none !important;
+    }
+    .side-column .solar-widget {
+        display: none !important;
+    }
+}
+
+/* Desktop: show sidebar as normal */
+@media (min-width: 701px) {
+    .menu-icon, .menu-toggle {
+        display: none !important;
+    }
+    .side-column {
+        position: static;
+        width: 200px;
+        height: auto;
+        box-shadow: none;
+        left: 0;
+        transition: none;
+    }
 }
